@@ -50,7 +50,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 
   line-height: 1.6;
 
@@ -58,11 +58,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body,
 button,
 input,
 textarea {
-  font-family: inherit;
+  font: inherit;
 }
 
 a {
@@ -91,10 +90,19 @@ CONTAINER
 ===== */
 
 .container {
-  width: min(var(--container-width), calc(100% - 40));
+  width: 100%;
+  max-width: var(--container-width);
 
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+/* =====
+Temporary Placeholder
+===== */
 
 .placeholder {
   min-height: 100vh;
@@ -102,7 +110,7 @@ CONTAINER
   display: grid;
   place-items: center;
 
-  padding-top: 80px;
+  padding-top: 76px;
 
   text-align: center;
 }
@@ -110,11 +118,16 @@ CONTAINER
 .placeholder h1 {
   margin-bottom: 12px;
 
+  color: var(--color-text);
+
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
 
   line-height: 1.1;
+  letter-spacing: -2px;
 }
 
 .placeholder p {
   color: var(--color-text-muted);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
