@@ -1,6 +1,4 @@
-/* =====
-RESET
-===== */
+/* RESET */
 
 *,
 *::before,
@@ -10,9 +8,7 @@ RESET
   box-sizing: border-box;
 }
 
-/* =====
-ROOT VARIABLE
-===== */
+/* ROOT VARIABLE */
 
 :root {
   --color-bg: #080808;
@@ -37,9 +33,7 @@ ROOT VARIABLE
   --transition: 0.3s ease;
 }
 
-/* =====
-BASE
-===== */
+/* BASE */
 
 html {
   scroll-behavior: smooth;
@@ -80,14 +74,7 @@ button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* =====
-CONTAINER
-===== */
+/* CONTAINER */
 
 .container {
   width: 100%;
@@ -100,34 +87,7 @@ CONTAINER
   padding-right: 20px;
 }
 
-/* =====
-Temporary Placeholder
-===== */
-
-.placeholder {
-  min-height: 100vh;
-
-  display: grid;
-  place-items: center;
-
-  padding-top: 76px;
-
-  text-align: center;
-}
-
-.placeholder h1 {
-  margin-bottom: 12px;
-
-  color: var(--color-text);
-
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: clamp(2rem, 5vw, 4rem);
-
-  line-height: 1.1;
-  letter-spacing: -2px;
-}
-
-.placeholder p {
-  color: var(--color-text-muted);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+img {
+  display: block;
+  max-width: 100%;
 }
