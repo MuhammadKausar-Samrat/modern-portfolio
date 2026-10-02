@@ -112,3 +112,45 @@
   line-height: 1.6;
 }
 
+.about__stats {
+  display: flex;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 45px;
+  border: 1px solid var(--colo-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-border);
+}
+
+.about__stat {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px;
+  background: var(--color-surface);
+
+  transition: background var(--transition-fast);
+}
+.about__stat:hover {
+  background: var(--color-surface-hover);
+}
+
+.about__stat strong {
+  display: block;
+  color: var(--color-text);
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.about__stat span {
+  color: var(--color-text-muted);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.4;
+}
