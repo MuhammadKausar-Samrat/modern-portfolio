@@ -1,23 +1,114 @@
-.about{
-    padding: 120px 0;
-    background: var(--color-surface);
+.about {
+  padding: 120px 0;
+  background: var(--color-surface);
 }
 
-.about__container{
-    width: 100%;
+.about__container {
+  width: 100%;
 }
 
-.about__header{
-    max-width: 700px;
-    margin-bottom: 70px;
+.about__header {
+  max-width: 700px;
+  margin-bottom: 70px;
 }
 
-.about__eyebrow{
-    margin-bottom: 14px;
-    color: var(--color-text-muted);
-    font-size: 13px;
-    font-weight: 600;
+.about__eyebrow {
+  margin-bottom: 14px;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-weight: 600;
 
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
+
+.about__title {
+  margin-bottom: 20px;
+  color: var(--color-text);
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+.about__intro {
+  max-width: 600px;
+
+  color: var(--color-text-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about__content {
+  display: flex;
+  grid-template-columns:
+    minmax(300px, 0.8fr)
+    minmax(0, 1.2fr);
+
+  align-items: center;
+  gap: 80px;
+}
+
+.about__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, #181818, #0d0d0d);
+}
+
+.about__image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.about__image-placeholder::before {
+  content: "";
+  position: absolute;
+
+  width: 55%;
+  height: 55%;
+
+  border: 1px solid #303030;
+  border-radius: 50%;
+}
+
+.about__image-placeholder span {
+  position: relative;
+  color: #555555;
+
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+
+  letter-spacing: -4px;
+}
+
+.about__text {
+  max-width: 650px;
+}
+
+.about__text p {
+  margin-bottom: 22px;
+
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about__text .about__lead {
+  color: var(--color-text);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
