@@ -112,12 +112,56 @@
   font-size: 11px;
   font-weight: 500;
 
-  transition: 
-  border-color var(--transition-fast);
+  transition: border-color var(--transition-fast);
   color: var(--transition-fast);
 }
 
 .skills__tag:hover {
   border-color: #444444;
   color: var(--color-text);
+}
+
+/* TABLET DEVICE */
+
+@media (max-width: 800px) {
+  .skills {
+    padding: 100px 0;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE DEVICE */
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 80px 0;
+  }
+
+  .skills__header {
+    margin-bottom: 45px;
+  }
+
+  .skills__title {
+    letter-spacing: -1.5px;
+  }
+
+  .skills__intro {
+    font-size: 15px;
+  }
+
+  .skills__card {
+    min-height: 250px;
+    padding: 26px;
+  }
+
+  .skills__card-number{
+    margin-bottom: 45px;
+  }
+
+  .skills__card-title{
+    font-size: 21px;
+  }
 }
