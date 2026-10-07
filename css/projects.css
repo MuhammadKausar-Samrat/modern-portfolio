@@ -1,0 +1,127 @@
+.projects {
+  padding: 120px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__header {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.projects__eyebrow {
+  margin-bottom: 12px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.projects__title {
+  margin-bottom: 18px;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.projects__intro {
+  max-width: 600px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.projects__card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition);
+}
+
+.projects__card:hover {
+  transform: translateY(-6px);
+  border-color: #3a3a3a;
+  background: var(--color-surface-hover);
+}
+
+.projects__card-featured {
+  grid-column: 1/-1;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.projects__visual {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #151515 0%, #0d0d0d 50%, #191919 100%);
+}
+
+.projects__visual::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+
+  top: 50%;
+  left: 50%;
+
+  border: 1px solid #303030;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.projects__visual::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+
+  top: 50%;
+  left: 50%;
+
+  border: 1px solid #303030;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects__visual-content {
+  color: var(--color-text-muted);
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.projects__visual-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 1.1rem;
+}
