@@ -60,7 +60,7 @@
   background: var(--color-surface-hover);
 }
 
-.projects__card-featured {
+.projects__card--featured {
   grid-column: 1/-1;
 
   display: grid;

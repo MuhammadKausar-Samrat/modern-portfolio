@@ -20,7 +20,7 @@
 .skills__title {
   margin-bottom: 20px;
   color: var(--color-text);
-  font-size: clamp(2.5re, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -2px;
@@ -33,9 +33,9 @@
   line-height: 1.7;
 }
 
-.skills__grid {
+.skill__grid {
   display: grid;
-  grid-template-columns: repeat(2, maxmin(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -70,6 +70,12 @@
 
 .skills__card:hover::before {
   transform: scaleX(1);
+}
+
+.skills__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .skills__card-number {
@@ -112,8 +118,9 @@
   font-size: 11px;
   font-weight: 500;
 
-  transition: border-color var(--transition-fast);
-  color: var(--transition-fast);
+  transition:
+  border-color var(--transition-fast),
+  color var(--transition-fast);
 }
 
 .skills__tag:hover {

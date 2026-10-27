@@ -199,7 +199,7 @@
 }
 
 /* Mobile */
-@media (max-width: 600) {
+@media (max-width: 600px) {
   .experience__header {
     margin-bottom: 50px;
   }

@@ -280,7 +280,7 @@
 
   padding: 11px 16px;
 
-  border: 1px solid var(--color-boder);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   background: rgba(16, 16, 16, 0.9);
   color: var(--color-text-muted);
