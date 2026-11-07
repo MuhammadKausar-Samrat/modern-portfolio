@@ -33,7 +33,7 @@
   line-height: 1.7;
 }
 
-.skill__grid {
+.skills__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -42,6 +42,7 @@
 .skills__card {
   position: relative;
   min-height: 280px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -119,8 +120,8 @@
   font-weight: 500;
 
   transition:
-  border-color var(--transition-fast),
-  color var(--transition-fast);
+    border-color var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .skills__tag:hover {
@@ -164,11 +165,11 @@
     padding: 26px;
   }
 
-  .skills__card-number{
+  .skills__card-number {
     margin-bottom: 45px;
   }
 
-  .skills__card-title{
+  .skills__card-title {
     font-size: 21px;
   }
 }
